@@ -19,7 +19,7 @@ javascript:void((function(){var t=prompt('New tab title:',document.title);if(t){
 Set the URL to:
 
 ```
-javascript:void((function(){if(window.__titleObserver){window.__titleObserver.disconnect();delete window.__titleObserver;delete window.__forcedTitle;var el=document.querySelector('title');if(el&&el.getAttribute('data-original')){document.title=el.getAttribute('data-original')}else{history.replaceState(null,null,location.href)}alert('Title reset.')}else{alert('No title override active.')}})())
+javascript:void((function(){if(window.__titleObserver){window.__titleObserver.disconnect();delete window.__titleObserver;delete window.__forcedTitle;var el=document.querySelector('title');if(el&&el.getAttribute('data-original')){document.title=el.getAttribute('data-original')}else{history.replaceState(null,null,location.href)}}})())
 ```
 
 ## Usage
