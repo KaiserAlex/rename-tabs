@@ -33,7 +33,7 @@ javascript:void((function(){if(window.__titleObserver){window.__titleObserver.di
 
 The **Rename Tab** bookmarklet injects a `MutationObserver` that watches the `<title>` element. Whenever the page tries to change the title, the observer immediately overrides it with your chosen title.
 
-The **Reset Tab Title** bookmarklet disconnects the observer, allowing the page to control its own title again.
+The **Reset Tab Title** bookmarklet disconnects the observer and fetches the current page's HTML to extract the original `<title>` – no page refresh needed.
 
 The renamed title persists until:
 - You click "Reset Tab Title"
